@@ -56,3 +56,97 @@ public class Main
 }
 
 
+
+
+1.1 to limit
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+	    int limit=obj.nextInt();
+		for(int i=1;i<=limit;i++)
+		System.out.print(i+" ");
+	}
+}
+
+2.Even number till limit
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+	    int limit=obj.nextInt();
+		for(int i=0;i<=limit;i++)
+		{
+		    if(i%2==0)//Even***for odd if(i%2!=0)
+				System.out.print(i+" ");
+	    }
+	}
+}
+
+3.A-Z
+public class Main
+{
+	public static void main(String[] args) {
+	   	for(char i=65;i<=90;i++)//check for lower case (97-122) & number(48-57))
+		{
+		   System.out.print(i+" ");
+	    }
+	}
+}
+
+4.n*n Pattern
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=limit;col++)
+	   System.out.print("*");
+	   
+	   System.out.println();
+	   }
+	}
+}
+5.Left triangle
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=row;col++)
+	   System.out.print("*");
+	   
+	   System.out.println();
+	   }
+	}
+}
+6.Right triangle
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	   
+	   for(int col=1;col<=limit-row;col++)
+	   System.out.print(" ");
+	   
+	   for(int col=1;col<=row;col++)
+	   System.out.print("*");
+	   
+	   System.out.println();
+	   }
+	}
+}
