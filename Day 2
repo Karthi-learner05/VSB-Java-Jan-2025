@@ -171,3 +171,14 @@ The number is not divisible by 3 and gives a remainder 1
 
 10.Write a program to check whether the given three sides can form a triangle or not.
 
+11.Get three inputs in the format-integer, character, integer. The inputs are all separated by spaces. Perform the operation with the integer values based on the character(+,-,*,/). Display the calculated value as the output.
+Ex : 23 + 45
+o/p : 68
+
+12.Max of 3 numbers
+
+13.largest of 4 numbers
+
+14.Ascending order of 4 numbers
+
+15.Check whether a triangle is Equilateral or Isosceles or Scalene based on its side
