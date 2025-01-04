@@ -217,3 +217,25 @@ UVWXY
 ***    ***
 **      **
 *        *
+
+
+16.Write a program to accept an integer range and print the sum of number that are divisible by either 3 or 5
+
+17.Factorial of given number
+
+18.Count of the digits in given number
+
+19.Sum of the digits in given number
+
+20.Find whether the given number is Harshad Number
+Harshad Number : if the number is divisible by sum of digits of the number
+
+21.Print all factors of given number
+
+22.Print count of factors of given number
+
+23.Print sum of factors of given number
+
+24.Perfect number or not
+
+25.Prime number or not
