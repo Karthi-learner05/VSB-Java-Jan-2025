@@ -41,6 +41,25 @@ else{
 else{
 }
 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        if(num1>0)
+        {
+            if(num1%2==0)
+            System.out.println("Positive Even");
+            else
+            System.out.println("Positive Odd");
+        }
+        else
+        System.out.println("Negative");
+    }
+}
+
+
+
 ******************SwitchCase Syntax******************
 switch()
 {
@@ -85,22 +104,7 @@ public class Main {
         
     }
 }
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
-        int num1=obj.nextInt();
-        if(num1>0)
-        {
-            if(num1%2==0)
-            System.out.println("Positive Even");
-            else
-            System.out.println("Positive Odd");
-        }
-        else
-        System.out.println("Negative");
-    }
-}
+
 
 3. PASS/FAIL
 Given a student's mark as input,print output as Pass/Fail based on the input  
@@ -151,4 +155,19 @@ Sample Output 1:
 The number is not divisible by 3 and gives a remainder 1
 
 
+
+6.Leap Year
+
+
+
+7.Day code ex 1-Mon,2-Tue
+
+
+
+8.Month code ex 1-jan,2-Feb
+
+9.check the given char is Upper or lower
+
+
+10.Write a program to check whether the given three sides can form a triangle or not.
 
