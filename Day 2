@@ -104,8 +104,20 @@ public class Main {
         
     }
 }
-
-
+**********Ternary Operator Syntax****************************
+condition ? True Statement : false statement;
+Nested Ternary is also possible
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        int num2=obj.nextInt();
+       System.out.println((num1>num2)?(num1):(num2));
+        
+    }
+}
+*********************************************************************
 3. PASS/FAIL
 Given a student's mark as input,print output as Pass/Fail based on the input  
 mark < 35 print Fail  
