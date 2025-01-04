@@ -150,3 +150,31 @@ public class Main
 	   }
 	}
 }
+
+
+7.Print following Pattern if input = 5
+11111
+22222
+33333
+44444
+55555
+8.Print following Pattern if input = 5
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+9.Print following Pattern if input = 5
+       1
+      12
+     123
+    1234
+   12345
+10.Print following Pattern if input = 5
+*****
+*   *
+*   *
+*   *
+*****
+11.Print following Pattern if input = 5
+   
