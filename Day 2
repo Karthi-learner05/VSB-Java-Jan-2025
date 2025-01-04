@@ -165,28 +165,206 @@ Sample Input 1:
 25
 Sample Output 1:
 The number is not divisible by 3 and gives a remainder 1
-
-
+**************************************************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+        int number=dvd.nextInt();
+        if((number%3)==0){
+            System.out.print("The number is divisible by 3");
+    }
+    else{
+        System.out.print("The number is not divisible by 3 and gives a remainder "+(number%3));
+    }
+}
+}
+***************************************************************************************************
 
 6.Leap Year
 
-
+**************************************************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+        int year=dvd.nextInt();
+        if((year%100)==0){
+            if((year%400)==0){
+                System.out.print("Leap Year");
+            }
+            else{
+                System.out.print("Not a Leap Year");
+            }
+        }
+        else{
+            if((year%4)==0){
+                System.out.print("Leap Year");
+            }
+            else{
+                System.out.print("Not a Leap Year");
+            }
+        }
+        }
+        
+}
+*****************************************************************************************************
 
 7.Day code ex 1-Mon,2-Tue
 
+**************************************************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+        int code=dvd.nextInt();
+        switch(code){
+            case 1:
+                System.out.printf("%d : Sunday",code);
+                break;
+            case 2:
+                System.out.printf("%d : Monday",code);
+                break;
+            case 3:
+                System.out.printf("%d : Tuesday",code);
+                break;
+            case 4:
+                System.out.printf("%d : Wednesday",code);
+                break;
+            case 5:
+                System.out.printf("%d : Thursday",code);
+                break;
+            case 6:
+                System.out.printf("%d : Friday",code);
+                break;
+            case 7:
+                System.out.printf("%d : Saturday",code);
+                break;
+            default:
+                System.out.println("Please enter between 1-7");
+        }
 
+    }  
+} 
+
+**************************************************************************************
 
 8.Month code ex 1-jan,2-Feb
 
+*************************************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+        int code=dvd.nextInt();
+        switch(code){
+            case 1:
+                System.out.printf("%d : Jan",code);
+                break;
+            case 2:
+                System.out.printf("%d : Feb",code);
+                break;
+            case 3:
+                System.out.printf("%d : Mar",code);
+                break;
+            case 4:
+                System.out.printf("%d : Apr",code);
+                break;
+            case 5:
+                System.out.printf("%d : May",code);
+                break;
+            case 6:
+                System.out.printf("%d : Jun",code);
+                break;
+            case 7:
+                System.out.printf("%d : July",code);
+                break;
+            case 8:
+                System.out.printf("%d : Aug",code);
+                break;
+            case 9:
+                System.out.printf("%d : Sep",code);
+                break;
+            case 10:
+                System.out.printf("%d : Oct",code);
+                break;
+            case 11:
+                System.out.printf("%d : Nov",code);
+                break;
+            case 12:
+                System.out.printf("%d : Dec",code);
+                break;
+            default:
+                System.out.println("Please enter between 1-12");
+        }
+
+    }  
+} 
+
+***************************************************************************
 9.check the given char is Upper or lower
 
+*************************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+        char ch=dvd.next().charAt(0);
+        if(Character.isLowerCase(ch))
+        System.out.print("Lowercase....");
+        else if(Character.isUpperCase(ch))
+        System.out.print("Uppercase....");
+        else
+        System.out.print("Thats may be an number or symbol");
+
+    }  
+} 
+**************************************************************************
 
 10.Write a program to check whether the given three sides can form a triangle or not.
 
+*****************************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+       double a=dvd.nextDouble();
+       double b=dvd.nextDouble();
+       double c=dvd.nextDouble();
+       if(((a+b)>c)&&((b+c)>a)&&((a+c)>b)){
+           System.out.println("Valid");
+       }
+       else{
+           System.out.println("Not Valid");
+       }
+       
+    }  
+} 
+***************************************************************************
 11.Get three inputs in the format-integer, character, integer. The inputs are all separated by spaces. Perform the operation with the integer values based on the character(+,-,*,/). Display the calculated value as the output.
 Ex : 23 + 45
 o/p : 68
-
+******************************************************************
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner dvd=new Scanner(System.in);
+       int n1=dvd.nextInt();
+       char c=dvd.next().charAt(0);
+       int n2=dvd.nextInt();
+       if(c=='+')
+       System.out.println((n1+n2));
+      else if(c=='-')
+       System.out.println((n1-n2));
+       else if(c=='*')
+       System.out.println((n1*n2));
+       else if(c=='/')
+       System.out.println((n1/n2));
+       else
+       System.out.println("Invalid character");
+    }  
+} 
+*****************************************************************
 12.Max of 3 numbers
 
 13.largest of 4 numbers
