@@ -1,0 +1,68 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("*****************************OPERATORS***************************");
+		Scanner in=new Scanner(System.in);
+		System.out.print("Enter number one =");
+		double n1=in.nextDouble();
+		System.out.print("Enter number two =");
+		double n2=in.nextDouble();
+		System.out.println("\n******************************************************************");
+		System.out.println("\n1.ARITHEMETIC OPERATORS\n");
+		System.out.println("\n******************************************************************");
+		System.out.printf("%.0f + %.0f = %.2f%n",n1,n2,(n1+n2));
+		System.out.printf("%.0f - %.0f = %.2f%n",n1,n2,(n1-n2));
+		System.out.printf("%.0f * %.0f = %.2f%n",n1,n2,(n1*n2));
+		System.out.printf("%.0f / %.0f = %.2f%n",n1,n2,(n1/n2));
+		System.out.printf("%.0f %% %.0f = %.2f%n",n1,n2,(n1%n2));
+		System.out.println("\n******************************************************************");
+		System.out.println("\n2.RELATIONAL OPERATORS\n");
+		System.out.println("\n******************************************************************");
+		System.out.println(n1+" < "+n2+" = "+(n1<n2));
+		System.out.println(n1+" > "+n2+" = "+(n1>n2));
+		System.out.println(n1+" <= "+n2+" = "+(n1<=n2));
+		System.out.println(n1+" >= "+n2+" = "+(n1>=n2));
+		System.out.println(n1+" == "+n2+" = "+(n1==n2));
+		System.out.println(n1+" != "+n2+" = "+(n1!=n2));
+		System.out.println("\n******************************************************************");
+		System.out.println("\n3.LOGICAL OPERATORS\n");
+		System.out.println("\n******************************************************************");
+		System.out.println(n1+" < "+n2+" && "+n1+" > "+n2+" = "+((n1<n2)&&(n1>n2)));
+		System.out.println(n1+" < "+n2+" || "+n1+" > "+n2+" = "+((n1<n2)||(n1>n2)));
+		System.out.println(" ! "+n1+" < "+n2+" = "+(!(n1<n2)));
+		System.out.println("\n******************************************************************");
+		System.out.println("\n4.ASSIGNMENT OPERATORS\n");
+		System.out.println("\n******************************************************************");
+		System.out.println("number one = "+n1);
+		System.out.println(n1+" += "+n2+" = "+(n1+=n2));
+		System.out.println(n1+" -= "+n2+" = "+(n1-=n2));
+		System.out.println(n1+" *= "+n2+" = "+(n1*=n2));
+		System.out.println(n1+" /= "+n2+" = "+(n1/=n2));
+		System.out.println(n1+" %= "+n2+" = "+(n1%=n2));
+		System.out.println("\n******************************************************************");
+		System.out.println("\n6.UNARY OPERATORS\n");
+		System.out.println("\n******************************************************************");
+		System.out.printf("%.0f ++ = %.2f%n",n1,(n1++));
+		System.out.printf("%.0f -- = %.2f%n",n1,(n1--));
+		System.out.printf("++ %.0f = %.2f%n",n1,(++n1));
+		System.out.printf("-- %.0f = %.2f%n",n1,(--n1));
+		System.out.println("\n******************************************************************");
+		System.out.println("\n7.BITWISE OPERATORS\n");
+		System.out.println("\n******************************************************************");
+		int n3=(int)n1;
+		int n4=(int)n2;
+		System.out.println(n1+" & "+n2+" = "+(n3&n4));
+		System.out.println(n1+" | "+n2+" = "+(n3|n4));
+        System.out.println(n1+" ^ "+n2+" = "+(n3^n4));
+        System.out.println(" ~ "+n1+" = "+(~(n3)));
+        System.out.println(n1+" << "+n2+" = "+(n3<<n4));
+        System.out.println(n1+" >> "+n2+" = "+(n3>>n4));
+        System.out.println("\n******************************************************************");
+		System.out.println("\n8.TERNARY OPERATOR\n");
+		System.out.println("\n******************************************************************");
+		double ter=(n1<n2)?n1:n2;
+		System.out.println(n1+" < "+n2+" ? "+n1+" : "+n2+" = "+ter);
+
+	}
+}
