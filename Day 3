@@ -176,5 +176,44 @@ ABCDE
 *   *
 *   *
 *****
-11.Print following Pattern if input = 5
+11.Print the following pattern
+ABCDE
+FGHIJ
+KLMNO
+PQRST
+UVWXY
+12.Print the following pattern
+1
+22
+333
+4444
+55555
+
+13.Print the following pattern
+*
+* *
+*   *
+*      *
+* * * * *
+14.Print the following pattern
+11111
+
+10001
+
+10001
+
+10001
+
+11111
+
+15.Print following Pattern if input = 5
    
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
