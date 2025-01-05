@@ -1,6 +1,53 @@
 1. Display an array from left to right
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr= new int[size];
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+        System.out.print(Arrays.toString(arr));
+    }
+}
 2. Reverse  an array
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr= new int[size];
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+                
+        for(int index=size-1;index>=0;index--)
+                System.out.print(arr[index]+" ");
+    }
+}
 3. Count zeroes and ones
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr= new int[size];
+        int zero=0,one=0;
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+                
+        for(int index=0;index<size;index++)
+             {
+                 if(arr[index]==0)
+                 zero++;
+                 else
+                 one++;
+             }   
+                
+        System.out.print("Zero's: "+zero+"\nOne's: "+one);
+    }
+}
 4. Count even and odd
 5. Found or not
 6. Largest of an array
