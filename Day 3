@@ -158,36 +158,149 @@ public class Main
 33333
 44444
 55555
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=limit;col++)
+	   System.out.print(row);
+	   
+	   System.out.println();
+	   }
+	}
+}
+
 8.Print following Pattern if input = 5
 ABCDE
 ABCDE
 ABCDE
 ABCDE
 ABCDE
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	      
+	   for(int row=1;row<=limit;row++)
+	   {
+	    	char ch='A';   
+	   for(int col=1;col<=limit;col++)
+	   {
+	   
+	   System.out.print(ch++);
+	   }
+	   System.out.println();
+	   }
+	}
+}
 9.Print following Pattern if input = 5
        1
       12
      123
     1234
    12345
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	   
+	   for(int col=1;col<=limit-row;col++)
+	   System.out.print(" ");
+	   
+	   for(int col=1;col<=row;col++)
+	   System.out.print(col);
+	   
+	   System.out.println();
+	   }
+	}
+}
 10.Print following Pattern if input = 5
 *****
 *   *
 *   *
 *   *
 *****
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	   for(int col=1;col<=limit;col++)
+	   {
+	       if(row==1||row==limit||col==1||col==limit)
+	       System.out.print("*");
+	       else
+	       System.out.print(" ");
+	   }
+	   
+	   System.out.println();
+	   }
+	}
+}
 11.Print the following pattern
 ABCDE
 FGHIJ
 KLMNO
 PQRST
 UVWXY
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	      char ch='A';
+	   for(int row=1;row<=limit;row++)
+	   {
+	    	   
+	   for(int col=1;col<=limit;col++)
+	   	   System.out.print(ch++);
+	   
+	   System.out.println();
+	   }
+	}
+}
 12.Print the following pattern
 1
 22
 333
 4444
 55555
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=row;col++)
+	   System.out.print(row);
+	   
+	   System.out.println();
+	   }
+	}
+}
 
 13.Print the following pattern
 *
@@ -195,6 +308,27 @@ UVWXY
 *   *
 *      *
 * * * * *
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=row;col++)
+	   {
+	       if(row==col|| row==limit || col==1)
+	            System.out.print("*");
+	       else
+	            System.out.print(" ");
+	   }   
+	   System.out.println();
+	   }
+	}
+}
+
 14.Print the following pattern
 11111
 
@@ -205,6 +339,27 @@ UVWXY
 10001
 
 11111
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	   for(int col=1;col<=limit;col++)
+	   {
+	       if(row==1||row==limit||col==1||col==limit)
+	       System.out.print("1");
+	       else
+	       System.out.print("0");
+	   }
+	   
+	   System.out.println();
+	   }
+	}
+}
 
 15.Print following Pattern if input = 5
    
@@ -259,8 +414,38 @@ public class Main{
 17.Factorial of given number
 
 18.Count of the digits in given number
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    long num=sc.nextLong();
+	    int count;
+	    for(count=0;num>0;num/=10,count++);
+	      	   System.out.println(count);
+	   
+	}
+}
 
 19.Sum of the digits in given number
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int sum=0,digit;
+	    while(num>0)
+	    {
+	        digit=num%10;
+	        sum+=digit;
+	        num/=10;
+	    }
+	   	   System.out.println(sum);
+	        
+	   
+	}
+}
 
 20.Find whether the given number is Harshad Number
 Harshad Number : if the number is divisible by sum of digits of the number
