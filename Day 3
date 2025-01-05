@@ -408,12 +408,8 @@ public class Main{
         
     }
 }
-
-16.Write a program to accept an integer range and print the sum of number that are divisible by either 3 or 5
-
-17.Factorial of given number
-
-18.Count of the digits in given number
+******************************NUMBER CRUNCHING***********************
+1.Count of the digits in given number
 import java.util.Scanner;
 public class Main
 {
@@ -427,7 +423,7 @@ public class Main
 	}
 }
 
-19.Sum of the digits in given number
+2.Sum of the digits in given number
 import java.util.Scanner;
 public class Main
 {
@@ -447,15 +443,70 @@ public class Main
 	}
 }
 
-20.Find whether the given number is Harshad Number
+3.Palindrome or not 
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int sum=0,digit;
+	    int palin=num;
+	    while(palin>0)
+	    {
+	        digit=palin%10;
+	        sum=(sum*10)+digit;
+	        palin/=10;
+	    }
+	   	   
+	   	   if(num==sum)
+	   	   System.out.println(num +" is a Palindrome");
+	   	   else
+	        System.out.println(num + " is not a Palindrome");
+	   
+	}
+}
+4.Find whether the given number is Harshad Number
 Harshad Number : if the number is divisible by sum of digits of the number
+1 to 10,12,18....
 
-21.Print all factors of given number
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int sum=0,digit;
+	    int temp=num;
+	    while(num>0)
+	    {
+	        digit=num%10;
+	        sum+=digit;
+	        num/=10;
+	    }
+	   	   if(temp%sum==0)
+	   	   System.out.println("Harshad Number");
+	   	   else
+	   	   System.out.println("Not a Harshad Number");
+	}
+}
 
-22.Print count of factors of given number
+5.Write a program to accept an integer range and print the sum of number that are divisible by either 3 or 5
 
-23.Print sum of factors of given number
+6.Factorial of given number
 
-24.Perfect number or not
 
-25.Prime number or not
+
+
+7.Print all factors of given number
+
+8.Print count of factors of given number
+
+9.Print sum of factors of given number
+
+10.Perfect number or not
+A perfect number is a positive integer that is equal to the sum of its positive proper divisors, excluding the number itself.
+6,28,496
+
+11.Prime number or not
