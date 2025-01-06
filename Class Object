@@ -1,3 +1,69 @@
+A class acts as a blueprint or template that defines the attributes (properties) and methods (behaviors) that objects of that type will share.
+
+
+An object is an instantiation (creation) of a class. It represents a specific entity with its own set of attribute values and the ability to execute the methods defined in the class.
+
+*********Creating Object*******
+public class Main
+{
+	int num=10;
+	
+	public static void main(String[] args) {
+	    
+	    Main obj=new Main();
+		System.out.println(obj.num);
+	}
+}
+*********Multiple class*******
+class Student{  
+ int id;  
+ String name;  
+}  
+class TestStudent2{  
+ public static void main(String args[]){  
+  Student s1=new Student();  
+  s1.id=101;  
+  s1.name="Selvi";  
+  System.out.println(s1.id+" "+s1.name);
+ }  
+} 
+
+*********Multiple class through constructor*******
+class Student{  
+ int id;  
+ String name;
+ Student(int i,String n)
+  {
+      id=i;
+      name=n;
+  }
+}  
+class Main{  
+ public static void main(String args[]){  
+  Student s1=new Student(101,"Selvi");  
+ 
+  System.out.println(s1.id+" "+s1.name);
+ }  
+}
+
+******************this keyword*****************
+class Student{  
+ int id;  
+ String name;
+ Student(int id,String name)
+  {
+     this.id=id;
+     this.name=name;
+  }
+}  
+class Main{  
+ public static void main(String args[]){  
+  Student s1=new Student(101,"Selvi");  
+ 
+  System.out.println(s1.id+" "+s1.name);
+ }  
+}
+
 1.Write a Java program to create a class called "Person" with a name and age attribute. Create two instances of the "Person" class, set their attributes using the constructor, and print their name and age.
 
 
