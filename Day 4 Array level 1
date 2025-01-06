@@ -49,6 +49,111 @@ public class Main {
     }
 }
 4. Count even and odd
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr= new int[size];
+        int even=0,odd=0;
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+                
+        for(int index=0;index<size;index++)
+             {
+                 if(arr[index]%2==0)
+                 even++;
+                 else
+                 odd++;
+             }   
+                
+        System.out.print("even's: "+even+"\nodd's: "+odd);
+    }
+}
+
 5. Found or not
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Size of array : ");
+        int size = sc.nextInt();
+        System.out.print("\nTarget value : ");
+        int tar = sc.nextInt();
+        int[] arr= new int[size];
+        int found=-1;
+        System.out.println("Provide Array values.... ");
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+                
+        for(int index=0;index<size;index++)
+             {
+                 if(arr[index]==tar)
+                 {
+                     found=index;
+                     break;
+                 }
+        
+             }   
+             if(found>=0)
+             {
+                 System.out.print("Target number "+tar+" found at index of "+found);
+            }
+            else
+            {
+                 System.out.print("Target number not found in array");
+            }   
+        
+    }
+}
+
 6. Largest of an array
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Size of array : ");
+        int size = sc.nextInt();
+        int[] arr= new int[size];
+        int max;
+        System.out.println("Provide Array values.... ");
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+        max=arr[0];        
+        for(int index=0;index<size;index++)
+             {
+                if(arr[index]>max){
+                    max=arr[index];
+                }
+             }
+        System.out.println("Largest Number is "+max);
+    }
+}
+
+
 7. Smallest of an array
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Size of array : ");
+        int size = sc.nextInt();
+        int[] arr= new int[size];
+        int min;
+        System.out.println("Provide Array values.... ");
+        for(int index=0;index<size;index++)
+                arr[index]=sc.nextInt();
+        min=arr[0];        
+        for(int index=0;index<size;index++)
+             {
+                if(arr[index]<min){
+                    min=arr[index];
+                }
+             }
+        System.out.println("Smallest Number is "+min);
+    }
+}
