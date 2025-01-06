@@ -1,0 +1,4 @@
+1.Write a Java program to create a class called "Person" with a name and age attribute. Create two instances of the "Person" class, set their attributes using the constructor, and print their name and age.
+
+
+2.Create a class Rectangle with attributes length and width. Write a method to calculate and return the area of the rectangle. Instantiate an object of the Rectangle class, set the values of length and width, and display the area.
