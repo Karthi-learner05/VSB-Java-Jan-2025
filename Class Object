@@ -68,3 +68,27 @@ class Main{
 
 
 2.Create a class Rectangle with attributes length and width. Write a method to calculate and return the area of the rectangle. Instantiate an object of the Rectangle class, set the values of length and width, and display the area.
+
+
+3.Write a program to welcome a person using the default constructor.
+Create a class Welcome with a default constructor which prints "Welcome ".
+Create a class Hello with a default constructor which prints "Hello ".
+In the main method prompt the user to enter the name of the person and create objects for classes Welcome and Hello.
+
+
+4.Write a program to find the area of the wall. Create a class Wall with the following private attributes
+length - double
+height - double
+Include parameterized constructor Wall(double length, double height) and a method calculateArea() which returns the area of the wall. In the main method get the length and breadth of two walls from the user.
+
+5.Liam needs a program to manage box dimensions. He wants to create a program that allows him to set the dimensions of a box and then make a copy of it.
+
+
+
+Write a program that creates a class named Box, takes input for the dimensions of a box and creates a copy of it using shallow copy. Ensure that the copied box retains the same dimensions as the original.
+
+Input 1 :
+14 16 15
+Output 1 :
+Original Set: Length = 14, Breadth = 16, Height = 15
+Copied Set: Length = 14, Breadth = 16, Height = 15
