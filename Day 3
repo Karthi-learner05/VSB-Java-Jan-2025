@@ -543,11 +543,87 @@ public class Main
 
 
 8.Print count of factors of given number
-
+import java.util.Scanner;
+public class Main
+{
+   public static void main (String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int num=sc.nextInt();
+       int count=0;
+       for(int i=1;i<=num;i++)
+       {
+           if((num%i)==0)
+           count++;
+           
+       }
+       System.out.print(count);
+    }
+}
 9.Print sum of factors of given number
+import java.util.Scanner;
+public class Main
+{
+   public static void main (String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int num=sc.nextInt();
+       int sum=0;
+       for(int i=1;i<=num;i++)
+       {
+           if((num%i)==0)
+           sum+=i;
+           
+       }
+       System.out.print(sum);
+    }
+}
 
 10.Perfect number or not
 A perfect number is a positive integer that is equal to the sum of its positive proper divisors, excluding the number itself.
 6,28,496
 
+import java.util.Scanner;
+public class Main
+{
+   public static void main (String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int num=sc.nextInt();
+       int sum=0;
+       for(int i=1;i<num;i++)
+       {
+           if((num%i)==0)
+           sum+=i;
+           
+       }
+       if(sum==num)
+       System.out.print("Perfect num");
+       else
+       
+       System.out.print("Not a Perfect num");
+    }
+}
+
 11.Prime number or not
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        boolean isPrime = true;
+        
+          for (int i = 2; i * i <= number; i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        
+
+        if (isPrime)
+            System.out.println(number + " is a prime number.");
+        else
+            System.out.println(number + " is not a prime number.");
+        scanner.close();
+    }
+}
+
