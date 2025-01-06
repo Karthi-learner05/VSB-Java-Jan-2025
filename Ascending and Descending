@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in=new Scanner(System.in);
+	    System.out.println("**********ASCENDING ORDER aprm DESCENDING ORDER**********");
+	    System.out.print("\nEthana number nu sollunga = ");
+	    int size=in.nextInt();
+		int[] arr=new int[size];
+		System.out.println("Number Kuduka Aarambinga...\n");
+		for(int i=0;i<size;i++){
+		    System.out.print((i+1)+" aavathu Number ennanu sollunga = ");
+		    arr[i]=in.nextInt();
+		}
+		for(int j=0;j<size;j++){
+		    int min=arr[j];
+		    for(int k=0;k<size;k++){
+		        if(arr[j]<arr[k])
+		        {
+		            min=arr[k];
+		            arr[k]=arr[j];
+		            arr[j]=min;
+		        }
+		    }
+		}
+		System.out.println("\nAscending order ithan...");
+		for(int i=0;i<size;i++){
+		    System.out.print(arr[i]+" ");
+		}
+		for(int j=0;j<size;j++){
+		    int min=arr[j];
+		    for(int k=0;k<size;k++){
+		        if(arr[j]>arr[k])
+		        {
+		            min=arr[k];
+		            arr[k]=arr[j];
+		            arr[j]=min;
+		        }
+		    }
+		}
+		System.out.println("\nDescending order ithan...");
+		for(int i=0;i<size;i++){
+		    System.out.print(arr[i]+" ");
+		}
+	}
+}
