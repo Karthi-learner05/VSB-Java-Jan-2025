@@ -65,6 +65,58 @@ class Main{
 }
 
 1.Write a Java program to create a class called "Person" with a name and age attribute. Create two instances of the "Person" class, set their attributes using the constructor, and print their name and age.
+******************************************************************************************
 
+class person{
+    int age;
+    String name;
+    person(int a,String n){
+        age=a;
+        name=n;
+    }
+    void personDetails(){
+        System.out.printf("Person's NAME = %s %nPerson's AGE = %s %n",name,age);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+
+		person p1=new person(20,"Ram Samy");
+		person p2=new person(32,"Kattamuthu");
+		p1.personDetails();
+		p2.personDetails();
+	}
+}
+*******************************************************************************
 
 2.Create a class Rectangle with attributes length and width. Write a method to calculate and return the area of the rectangle. Instantiate an object of the Rectangle class, set the values of length and width, and display the area.
+
+****************************************************************************
+import java.util.Scanner;
+
+class Rectangle{
+    double length;
+    double width;
+    void setValue(double a,double n){
+        length=a;
+        width=n;
+    }
+    double calculateArea(){
+        return this.length*this.width;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Rectangle r1=new Rectangle();
+		Scanner in=new Scanner(System.in);
+		double l=in.nextDouble();
+		double w=in.nextDouble();
+		r1.setValue(l,w);
+		System.out.printf("%.2f",r1.calculateArea());
+	
+	}
+}
+
+**************************************************************
