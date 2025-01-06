@@ -1,3 +1,6 @@
+***************Day2*********************
+
+
 1.//Mulitiplication of 2 nos without using *
 
 import java.util.Scanner;
@@ -59,7 +62,71 @@ public class Main {
       }
 }
 
+***************Day 3*********************
+
+1.Sum of the digits
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int sum=0,digit;
+	    while(num>0)
+	    {
+	        digit=num%10;
+	        sum+=digit;
+	        num/=10;
+	    }
+	   	   System.out.println(sum);
+	        
+	   
+	}
+}
 
 
+2.Palindrome or not
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int sum=0,digit;
+	    int palin=num;
+	    while(palin>0)
+	    {
+	        digit=palin%10;
+	        sum=(sum*10)+digit;
+	        palin/=10;
+	    }
+	   	   
+	   	   if(num==sum)
+	   	   System.out.println(num +" is a Palindrome");
+	   	   else
+	        System.out.println(num + " is not a Palindrome");
+	   
+	}
+}
 
-2.
+3.Equilateral triangle
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	   for(int col=1;col<=limit-row;col++)
+	   System.out.print("  ");
+	   for(int col=1;col<=(2*row)-1;col++)
+	   System.out.print("* ");
+	    
+	   System.out.println();
+	   }
+	}
+}
+
+
