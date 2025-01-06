@@ -194,3 +194,29 @@ o/p : 68
 14.Ascending order of 4 numbers
 
 15.Check whether a triangle is Equilateral or Isosceles or Scalene based on its side
+*****************************************
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		int side_1=obj.nextInt();
+	    int side_2=obj.nextInt();
+	    int side_3=obj.nextInt();
+	    if(((side_1+side_2)>side_3)&&((side_1+side_3)>side_2)&&((side_2+side_3)>side_1)){
+	        if((side_1==side_2)&&(side_2==side_3)){
+	            System.out.println("equilateral triangle");
+	        }
+	        else if((side_1==side_2)||(side_1==side_3)||(side_2==side_3)){
+	            System.out.println("isoceles triangle");
+	        }
+	        else {
+	            System.out.println("scalene triangle");
+	        }
+	    }
+	    else{
+	        System.out.println("not an triangle");
+	    }
+	}
+}
+****************************************
